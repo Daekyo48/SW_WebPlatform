@@ -195,8 +195,8 @@ export default function MobileWebPage() {
   useEffect(() => {
     const calculateDaysLeft = () => {
       const today = new Date()
-      const targetDate = new Date(2025, 0, 8)
-      const endDate = new Date(2025, 0, 9)
+      const targetDate = new Date(2025, 2, 4)
+      const endDate = new Date(2025, 2, 5)
       const timeDiff = targetDate.getTime() - today.getTime()
       const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24))
       
@@ -460,7 +460,7 @@ export default function MobileWebPage() {
               {daysLeft === 'Day' ? 'D-Day' : `D-${daysLeft}`}
             </div>
             <div className="text-sm text-gray-600">
-              (종업식까지)
+              (개학식까지)
             </div>
           </div>
 
@@ -656,7 +656,7 @@ export default function MobileWebPage() {
           입력된 정보는 이외의 용도로 수집·이용되지 않습니다
         </p>
         <p className="text-xs text-gray-600 text-center">
-          최종 수정일: 2024-12-25
+          최종 수정일: 2025-01-09
         </p>
         </main>
       )}
